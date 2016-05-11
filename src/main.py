@@ -3,7 +3,7 @@ from hashlib import md5
 from binascii import hexlify
 from workflow import Workflow
 from workflow.workflow import Settings
-from thulib.network import login
+from thulib.network import login, logout
 
 log = None
 
@@ -14,8 +14,9 @@ def main(wf):
     if args[0] == u'--login':
         username = wf.get_password(u'username')
         password = wf.get_password(u'password')
-        log.debug(u'username: %s, password: %s' % (username, password))
         login(username, password)
+    elif args[0] == u'--logout':
+        logout()
     elif args[0] == u'--account':
         username = wf.save_password('username', args[1])
         password = wf.save_password('password',

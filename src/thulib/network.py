@@ -1,4 +1,4 @@
-from workflow.web import request
+from workflow.web import post
 from workflow.notify import notify
 from urllib2 import URLError
 
@@ -13,8 +13,15 @@ def login(username, md5pwd):
     }
 
     try:
-        res = request('POST', LOGIN_URL, data=data)
+        res = post(LOGIN_URL, data=data, timeout=1)
+        notify(title=str(res.status_code), text=res.text)
     except URLError as e:
         notify(title=str(e.errno), text=str(e.reason))
 
-    notify(title=str(res.status_code), text=res.text)
+def logout():
+    data = { 'action': 'logout' }
+    try:
+        res = post(LOGIN_URL, data=data, timeout=1)
+        notify(title=str(res.status_code), text=res.text)
+    except URLError as e:
+        notify(title=str(e.errno), text=str(e.reason))

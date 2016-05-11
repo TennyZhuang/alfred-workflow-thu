@@ -19,6 +19,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>72FF24FC-6418-4D00-9D85-5744A569086C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B0FC1B7D-BE66-4E04-89BA-5556474BFA7A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>E437A76C-E209-4C15-AA8A-25257F6CB031</key>
 		<array>
 			<dict>
@@ -84,6 +95,46 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/python main.py --logout</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B0FC1B7D-BE66-4E04-89BA-5556474BFA7A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>thu logout</string>
+				<key>subtext</key>
+				<string>logout</string>
+				<key>text</key>
+				<string>Logout</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>72FF24FC-6418-4D00-9D85-5744A569086C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -139,12 +190,22 @@
 		<key>622481B7-333C-4D4F-A6E5-443BF009CFB2</key>
 		<dict>
 			<key>ypos</key>
+			<real>300</real>
+		</dict>
+		<key>72FF24FC-6418-4D00-9D85-5744A569086C</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>B0FC1B7D-BE66-4E04-89BA-5556474BFA7A</key>
+		<dict>
+			<key>ypos</key>
 			<real>180</real>
 		</dict>
 		<key>E437A76C-E209-4C15-AA8A-25257F6CB031</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>300</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
