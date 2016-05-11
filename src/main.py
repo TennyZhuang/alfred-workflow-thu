@@ -1,6 +1,4 @@
 import sys
-from hashlib import md5
-from binascii import hexlify
 from workflow import Workflow
 from workflow.notify import notify
 from workflow.workflow import PasswordNotFound
@@ -24,8 +22,7 @@ def main(wf):
         logout()
     elif args[0] == u'--account':
         username = wf.save_password(u'username', args[1])
-        password = wf.save_password(u'password',
-            hexlify(md5(args[2].encode('latin-1')).digest()))
+        password = wf.save_password(u'password', args[2])
     elif args[0] == u'--clear':
         wf.delete_password(u'username')
         wf.delete_password(u'password')

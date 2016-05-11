@@ -1,10 +1,13 @@
 from workflow.web import post
 from workflow.notify import notify
 from urllib2 import URLError
+from hashlib import md5
+from binascii import hexlify
 
 LOGIN_URL = 'http://net.tsinghua.edu.cn/do_login.php'
 
-def login(username, md5pwd):
+def login(username, password):
+    md5pwd = hexlify(md5(password.encode('latin-1')).digest())
     data = {
         'action': 'login',
         'username': username,
