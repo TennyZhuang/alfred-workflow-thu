@@ -15,7 +15,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -62,4 +61,4 @@ target/
 .ipynb_checkpoints
 
 src/html/*
-src/!html/.gitkeep
+!src/html/.gitkeep
