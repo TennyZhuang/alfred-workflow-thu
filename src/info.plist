@@ -17,6 +17,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>09F08AE9-7594-4819-BE69-9216204D9C2C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>75716E51-94A4-4DA2-9C7E-3A3073B8763B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>2A3279BC-F48C-4173-81F5-F36DF2C56089</key>
 		<array>
 			<dict>
@@ -246,6 +257,46 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/python main.py --academic</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>75716E51-94A4-4DA2-9C7E-3A3073B8763B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>thu academic</string>
+				<key>subtext</key>
+				<string>open academic.tsinghua.edu.cn</string>
+				<key>text</key>
+				<string>Academic</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>09F08AE9-7594-4819-BE69-9216204D9C2C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -329,62 +380,72 @@
 		<key>03464DAA-CB0E-44F5-A8EF-049C64751676</key>
 		<dict>
 			<key>ypos</key>
-			<real>660</real>
+			<real>690</real>
+		</dict>
+		<key>09F08AE9-7594-4819-BE69-9216204D9C2C</key>
+		<dict>
+			<key>ypos</key>
+			<real>470</real>
 		</dict>
 		<key>0E46C9E4-BE35-475B-87DC-BBD32D9EA445</key>
 		<dict>
 			<key>ypos</key>
-			<real>420</real>
+			<real>360</real>
 		</dict>
 		<key>16039760-F173-4AB8-9C73-DA7401D5DE23</key>
 		<dict>
 			<key>ypos</key>
-			<real>60</real>
+			<real>20</real>
 		</dict>
 		<key>2A3279BC-F48C-4173-81F5-F36DF2C56089</key>
 		<dict>
 			<key>ypos</key>
-			<real>540</real>
+			<real>580</real>
 		</dict>
 		<key>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</key>
 		<dict>
 			<key>ypos</key>
-			<real>60</real>
+			<real>20</real>
 		</dict>
 		<key>4811E57E-78E8-4CD5-B5A3-56305160324C</key>
 		<dict>
 			<key>ypos</key>
-			<real>660</real>
+			<real>690</real>
 		</dict>
 		<key>622481B7-333C-4D4F-A6E5-443BF009CFB2</key>
 		<dict>
 			<key>ypos</key>
-			<real>300</real>
+			<real>240</real>
 		</dict>
 		<key>72FF24FC-6418-4D00-9D85-5744A569086C</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>130</real>
+		</dict>
+		<key>75716E51-94A4-4DA2-9C7E-3A3073B8763B</key>
+		<dict>
+			<key>ypos</key>
+			<real>470</real>
 		</dict>
 		<key>A0303D2C-9ECA-4D4E-9983-EED14D2538D0</key>
 		<dict>
 			<key>ypos</key>
-			<real>420</real>
+			<real>360</real>
 		</dict>
 		<key>B0FC1B7D-BE66-4E04-89BA-5556474BFA7A</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>130</real>
 		</dict>
 		<key>BA328A79-BD4F-407F-8656-24B5A04D1B56</key>
 		<dict>
 			<key>ypos</key>
-			<real>540</real>
+			<real>580</real>
 		</dict>
 		<key>E437A76C-E209-4C15-AA8A-25257F6CB031</key>
 		<dict>
 			<key>ypos</key>
-			<real>300</real>
+			<real>240</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
