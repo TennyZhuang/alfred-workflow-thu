@@ -4,6 +4,7 @@ from workflow.notify import notify
 from workflow.workflow import PasswordNotFound
 from thulib.network import login, logout
 from thulib.info import info
+from thulib.learn import learn
 
 log = None
 
@@ -30,6 +31,8 @@ def main(wf):
         login(username, password)
     elif args[0] == u'--info':
         info(username, password)
+    elif args[0] == u'--learn':
+        learn(username, password)
     elif args[0] == u'--clear':
         wf.delete_password(u'username')
         wf.delete_password(u'password')
