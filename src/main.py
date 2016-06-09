@@ -1,4 +1,5 @@
 import sys
+sys.path.append('./lib')
 from workflow import Workflow
 from workflow.notify import notify
 from workflow.workflow import PasswordNotFound
