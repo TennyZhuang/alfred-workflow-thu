@@ -6,12 +6,12 @@
 </head>
 <body>
     Please Wait...
-    <div id="hidden" style="display: none;"></div>
     <script>
         var form = document.createElement('form');
-        document.getElementById('hidden').appendChild(form);
+        form.style.visibility = "hidden";
         form.setAttribute('method', 'post');
         form.setAttribute('action', '{{ action }}');
+        document.body.appendChild(form);
         {% for input in inputs %}
             var input{{ loop.index }} = document.createElement('input');
             input{{ loop.index }}.setAttribute('name', '{{ input.name }}');
