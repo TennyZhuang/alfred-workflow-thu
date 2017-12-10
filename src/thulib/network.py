@@ -4,7 +4,7 @@ from urllib2 import URLError
 from hashlib import md5
 from binascii import hexlify
 
-LOGIN_URL = 'http://net.tsinghua.edu.cn/do_login.php'
+LOGIN_URL = 'https://net.tsinghua.edu.cn/do_login.php'
 
 def login(username, password):
     md5pwd = hexlify(md5(password.encode('latin-1')).digest())
