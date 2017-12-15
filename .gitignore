@@ -62,3 +62,5 @@ target/
 
 src/html/*
 !src/html/.gitkeep
+
+*.alfredworkflow
