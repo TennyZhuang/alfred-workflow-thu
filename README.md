@@ -6,7 +6,7 @@ An Alfred2 workflow for THU Student.
 1. [Alfred Powerpack](https://buy.alfredapp.com/)
 
 ## Installing
-1. Click the download buttons below
+1. Download [latest releases](https://github.com/TennyZhuang/alfred-workflow-thu/releases)
 2. Double-click to import into Alfred 2
 3. Review the workflow to add custom Hotkeys
 
