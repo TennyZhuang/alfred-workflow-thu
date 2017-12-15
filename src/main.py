@@ -26,7 +26,7 @@ def main(wf):
         username = wf.get_password(u'username')
         password = wf.get_password(u'password')
     except PasswordNotFound:
-        notify(title=u'Account Missing', text=u'set your account by "thu --account [username] [password]" Firstly.')
+        notify(title=u'Account Missing', text=u'set your account by "thu account [username] [password]" Firstly.')
         return -1
 
     if args[0] == u'--login':
