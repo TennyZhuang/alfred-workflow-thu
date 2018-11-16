@@ -37,6 +37,8 @@ def main(wf):
         learn(username, password)
     elif args[0] == u'--academic':
         academic(username, password)
+    elif args[0] == u'--mail':
+        mails(username, password) 
     elif args[0] == u'--clear':
         wf.delete_password(u'username')
         wf.delete_password(u'password')
